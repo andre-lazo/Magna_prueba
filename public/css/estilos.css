@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  ul, ol {
+    list-style:none;
+  }
+  .navbar-nav li a{
+   
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  .navbar-nav li a:hover{
+    background-color: #434343;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+  }
+  .navbar-nav li:hover > ul{
+    display: block;
+  }
+  .navbar-nav li ul li{
+    position: relative;
+  }
+  .navbar-nav li ul li ul {
+    right: -160px;
+    top: 0px;
+  }
+  .navbar {
+    padding-bottom: 20px;
+  }
+  .can{
+    background-color: darkorange;
+    
+  }
+  .can2{
+    background-color: darkgoldenrod;
+  }
+  
+  #contenedor{
+    display: block;
+    
+    }
+    #izq{
+      float: left;
+      margin-top: -50px;
+    }
+    #dere{
+      float: right;
+    }
+    #volver{
+      margin-left: 190%;
+    }
+    .read-more-state {
+      display: none;
+    }
+    
+    .read-more-target {
+      opacity: 0;
+      max-height: 0;
+      font-size: 0;
+      transition: .25s ease;
+    }
+    
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+      opacity: 1;
+      font-size: inherit;
+      max-height: 999em;
+    }
+    
+    .read-more-state~.read-more-trigger:before {
+      content: 'Ver más';
+    }
+    
+    .read-more-state:checked~.read-more-trigger:before {
+      content: 'Ver menos';
+    }
+    
+    .read-more-trigger {  
+      cursor: pointer;
+      display: inline-block;
+      padding: 0 .5em;
+      color: #666;
+      font-size: .9em;
+      line-height: 2;
+      border: 1px solid #ddd;
+      border-radius: .25em;
+      margin-left: 280px;
+      
+    }
+    .espa1{
+      margin-top: 500px;
+    }
+    .aggEvento{
+      display: inline;
+    }
+
+    
+  
+.hr{
+
+  background: lightblue;
+}
+#logoimg{
+  margin: 1000px;
+}
