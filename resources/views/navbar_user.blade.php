@@ -18,17 +18,20 @@
     <script src="{{asset('css/bootstrap.min.js')}}" ></script>
     <script src="{{asset('js/sweetalert.min.js')}}" ></script>
     <script src="{{asset('js/validaciones.js')}}" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
     @yield('scripts')
  <style>
    .flotar{
      margin-left: 70%;
    }
-   @media screen and (max-width:800px){
+   @media (max-width: 850px) {
     .flotar{
       margin-left: 0px;
     }
+    
    }
+
  </style>
  
 </head>
@@ -118,5 +121,7 @@
         }
     });
      </script>
+    
 </body> 
+
 </html>

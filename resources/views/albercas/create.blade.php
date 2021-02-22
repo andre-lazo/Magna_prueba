@@ -20,19 +20,20 @@
 </script>
 @section('content')
     <div class="row">
-      <div class="animate__animated animate__fadeInLeftBig col-lg-6 col-xs-12 pt-5 mt-5">
+      <div class="col-lg-6 col-xs-12 pt-5 mt-5">
 <img src="{{asset('img/pis.jpg')}}" width="100%" alt="">
       </div>
 <div class="col-lg-6 col-xs-12">
   <div class=" ">
-    <center><h1 class="animate__animated animate__fadeInLeftBig font-weight-bold pt-5">Horarios ya reservados
+    <center><h1 class=" font-weight-bold pt-5">Horarios ya reservados
     </h1>
     @foreach ($arreglo as $alberca)
     <p class="font-weight-bold">{{$alberca->hora}}</p>
 @endforeach</center>
- <h3 class='animate__animated animate__fadeInRightBig text-center mb-2 font-weight-bold pt-5'>HORARIOS-DISPONIBLES ALBERCA </h3>
+
+ <h3 class='text-center mb-2 font-weight-bold pt-5'>HORARIOS-DISPONIBLES ALBERCA </h3>
              
- <div id="horarios" class="animate__animated animate__fadeInRightBig col-xs-12">
+ <div id="horarios" class="col-xs-12">
      <center>
     @if(!$hora1) <input type="button"  onclick="cargar()" class="boton btn btn-primary mr-4" value=" 08 am - 09 am"> @endif
     @if (!$hora2)    <input type="button"  onclick="cargar()" class="boton btn btn-primary mr-4" value=" 09 am - 10 am">@endif
@@ -51,7 +52,7 @@
   <div>
        
          
-      <div class="animate__animated animate__fadeInTopRight text-center font-weight-bold">
+      <div class="text-center font-weight-bold">
           <label>Hora</label>
           <input readonly type="text" class="form-control" name="hora" id="txtHora2" required>
           <label>Cedula</label>
@@ -135,7 +136,7 @@
         </div>
       
          <center>
-          <div class="animate__animated animate__fadeInRightBig">
+          <div>
             <button type="submit" class="btn btn-primary">Guardar</button>
             <button type="reset" class="btn btn-danger">Cancelar</button>
         </div>

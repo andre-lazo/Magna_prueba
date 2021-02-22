@@ -1,7 +1,7 @@
 @extends('navbar_user')
 
 @section('scripts')
-<center><h1 class="animate__animated animate__bounce pt-5">Seccion de Reservacion de la Alberca</h1></center>
+<center><h1 class="pt-5">Seccion de Reservacion de la Alberca</h1></center>
 
   
       <link rel="stylesheet" href="{{asset('fullcalendar/core/main.css')}}">
@@ -16,13 +16,17 @@
       <script src="{{asset('fullcalendar/list/main.js')}}" defer></script>
       <script src="{{asset('fullcalendar/timegrid/main.js')}}" defer></script>
       <script>
-         
-          var url_show="{{url('/albercas/show')}}"; 
-      </script>
-      <script src="{{asset('js/calendar.js')}}" defer></script>
+       
+        
   
-
-     
+   
+         
+       var url_show="{{url('/albercas/show')}}"; 
+      </script>
+  
+  <script src="{{asset('js/calendario.js')}}" defer></script>
+  
+    
  
 @endsection
 
@@ -38,12 +42,13 @@
 
 <div clas="row">
    
-    <div class="animate__animated animate__fadeInRightBig cal">
+    <div class="cal">
         <div id="calendar"></div>
     </div>
     <div class="col"></div>
 </div>
-<div class="animate__animated animate__fadeInRightBig table-wrapper-scroll-y my-custom-scrollbar row container mt-5">
+<div class="table-wrapper-scroll-y my-custom-scrollbar row container mt-5">
+  
 <table class="table table-bordered table-striped mb-0  ml-5table-hover">
   <thead class="thead-dark">
     <tr>
@@ -57,7 +62,7 @@
     </tr>
   </thead>
   <tbody>
-    @foreach($usuario as $alberca)
+  @foreach($usuario as $alberca)
     @include('albercas.model_delete')
     <tr>
      

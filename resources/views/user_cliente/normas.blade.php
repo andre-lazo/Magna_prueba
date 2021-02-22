@@ -2,152 +2,41 @@
 
 
 @section('content')
-<style>
-  .centrado{
-
-    margin-top: 32px;
-  }
-  .centrado2{
-
-    margin-top: 14px;
-    margin-left: 60px;
-  }
-  .centrado3{
-
-    margin-top: 25px;
-    margin-right: 15px;
-  }
-  .centrado4{
-
-    margin-top: 10px;
-   
-  }
-  .centrado5{
-
-    margin-top: 0px;
-   
-  }
-  .centrado6{
+    <h1 class="pt-5 ">DIRIJASE A:</h1>
+<div class=" btn-group   mb-5">
+  <li style="list-style: none">  <a href="#CAPITULOS" class="btn btn-outline-warning">CAPÍTULOS</a>          </li>
+  <li style="list-style: none">  <a href="#NORMAS" class="btn btn-outline-warning">NORMAS</a></li>
+  <li style="list-style: none">  <a href="#PROCEDIMIENTOS" class="btn btn-outline-warning">PROCEDIMIENTOS</a></li>
   
-    margin-top: 20px;
-   
-  }
-  .centrado7{
-    margin-top: 40px;
-  
-   
-  }
-  
-  .centrado8{
-    margin-top: 10px;
-  
-    margin-left: 50px;
-  }
-  #centrado9{
-
-    margin-top: 10px;
-  }
-  #centrado10{
-
-    margin-top: 15px;
-    margin-left: 30px;
-  }
-  #centrado11{
-
-    margin-top: 35px;
-  }
-  #centrado12{
-
-    margin-top: 40px;
-   
-  }
-  #centrado13{
-
-    margin-top: 52px;
-  }
-  #centrado14{
-
-    margin-top: 35px;
-  }
-  #centrado15{
-
-    margin-top: 40px;
-  }
-  #centrado16{
-
-    margin-top: 70px;
-  }
-  #centrado17{
-
-    margin-top: 40px;
-  }
-  .centrado18{
-
-    margin-top: 32px;
-  }
-  .centrado19{
-
-    margin-top: 120px;
-  }
-  .centrado20{
-
-    margin-top: 130px;
-  }
-
-  .centrado21{
-
-    margin-top: 100px;
-  }
-  .centrado22{
-
-    margin-top: 70px;
-  }
-</style>
-  <ul class="a pt-5">
-    <section class="animate__animated animate__fadeInRightBig container mt-2" id="menu">
-        <p class="h3" >DIRIJASE A:</p> 
-       <div class=" btn-group ">
-        <li>  <a href="#CAPITULOS" class="btn btn-outline-warning">CAPÍTULOS</a>          </li>
-        <li>  <a href="#NORMAS" class="btn btn-outline-warning">NORMAS</a></li>
-        <li>  <a href="#PROCEDIMIENTOS" class="btn btn-outline-warning">PROCEDIMIENTOS</a></li>
-        <li>  <a href="#REGLAMENTO" class="btn btn-outline-warning">REGLAMENTO</a></li>
-       </div>
-      </section>
-  </ul>
-   
-
-  <section class="jumbotron " id="contenedor">
-    <div id="izq" class="animate__animated animate__fadeInRightBig">
-      
-   <h1> <a name="CAPITULOS">CAPÍTULOS </h1> 
-    <hr size='5' width="1200px">
-   </div>
-    <div class="animate__animated animate__fadeInLeftBig row" id="contene">
-      <div class="col-xs-12 col-lg-6" id="dere">
-        <a href="#menu" class="btn btn-primary" id="volver">Volver</a>
-      </div>
-    </div>
-   
-         <div class="row">
-    <div class="animate__animated animate__fadeInLeftBig  col-xs-6 col-lg-6">
-      <center>  <img src="img/CAPÍTULO I.jpg" width="60%" height="70%" alt="" id="centrado9"></center> 
-    </div>
+ </div>
+  <section class="jumbotron pt-5 bg-white"  >
     
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1 class="mr-5">Capitulo I.- GENERALIDADES  <span class="h4">(1/12)</span> </h1>
-      <hr size='5' width="600px">
+    <h1> <a name="CAPITULOS">CAPÍTULOS<a href=""  class="btn btn-primary float-right">VOLVER</a>  </h1>
+ 
+  <div class="row pt-5 bg-secondary" > 
+    
+<div class="col-xs-12 col-lg-6">
+  <img src="img/CAPÍTULO I.jpg" class="" width="100%" height="70%">
+</div>
+    <div class="col-xs-12 col-lg-6">
+      
+      <h1 class="">Capitulo I.- GENERALIDADES  <span class="h4">(1/12)</span> </h1>
+      <hr size='5' width="100%">
       
       <p class="h4 text-justify">Art. 1.- Las presentes normas tiene por objeto establecer los procedimientos que se deben
         observar para llevar a efecto la buena convivencia y seguridad de la Urbanización, así como
         regular el comportamiento de los residentes, visitantes, guardias de seguridad y constructores </p>
+     
     </div>
-   </div>
-   <div class="row">
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1>Capitulo II.- ALICUOTAS  <span class="h4">(2/12)</span></h1>
-      <hr size='5' width="600px">
+  </div>
+   
+  <div class="row pt-5 bg-white"> 
+    
+    <div class="col-xs-12 col-lg-6">
+    <h1>Capitulo II.- ALICUOTAS  <span class="h4">(2/12)</span></h1>
+      <hr size='5' width="100%">
+      
+     
       <p class="h4 text-justify">Art. 2.- Para el mantenimiento general de la Urbanización y atención de gastos operativos, los
         residentes y/o propietarios pagarán mensualmente las alícuotas de mantenimiento de manera
         OBLIGATORIA. Lo podrán hacer a través de todos los canales de pago disponibles con los que
@@ -156,32 +45,40 @@
         de la urbanización.</p>
 
     </div>
-    <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <center>  <img src="img/CAPÍTULO II.jpg" width="60%" height="70%" alt="" id="centrado10"></center> 
-          </div>
-   </div>
-   <div class="row">
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <center>  <img src="img/CAPÍTULO III.jpg" width="60%" height="70%" id="centrado11" alt=""></center> 
-    </div>
-    <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1 class="mr-5">Capitulo III.- DE LAS ÁREAS Y SECTORES COMUNES  <span class="h4">(3/12)</span></h1>
-      <hr size='5' width="600px">
-      <p class="h4 text-justify">Art. 3.- Se consideran áreas comunes: las calles, avenidas, aceras, parterres, áreas verdes,
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/CAPÍTULO II.jpg" class="" width="100%" height="70%">
+         
+        </div>
+      </div>
+      <div class="row pt-5 bg-secondary"> 
+    
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/CAPÍTULO III.jpg" class="" width="100%" height="70%">
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              
+              <h1 class="">Capitulo III.- DE LAS ÁREAS Y SECTORES COMUNES   <span class="h4">(3/12)</span> </h1>
+              <hr size='5' width="100%">
+              
+              <p class="h4 text-justify">Art. 3.- Se consideran áreas comunes: las calles, avenidas, aceras, parterres, áreas verdes,
         áreas de recreación deportivas y las que se construyen en el futuro con estos propósitos.</p>
         <p class="h4 text-justify"> Art. 4.- Las áreas privadas la constituyen las viviendas con sus jardines frontales, laterales,
         posteriores, áreas de parqueo y los solares vacios.</p>
         <p class="h4 text-justify">
         Art. 5.- Los sectores comunes son: los ingresos vehiculares y peatonales, y lo establecido en el
         artículo 3 del presente capitulo. </p>
-    </div>
-   </div>
-   <div class="row">
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1>Capitulo IV.- DEL USO Y CONSERVACIÓN DE LAS ÁREAS Y SECTORES COMUNES<span class="h4">(4/12)</span></h1>
-      <hr size='5' width="600px">
+              
+            </div>
+          </div>
+
+
+          <div class="row pt-5 bg-white"> 
+    
+    <div class="col-xs-12 col-lg-6">
+    <h1>Capitulo IV.- DEL USO Y CONSERVACIÓN DE LAS ÁREAS Y SECTORES COMUNES  <span class="h4">(4/12)</span></h1>
+      <hr size='5' width="100%">
+      
+     
       <p class="h4 text-justify">Art.6.- Los vehículos motorizados podrán circular dentro de la urbanización a una velocidad
         máxima permitida de 20 Km por hora, observando las leyes de tránsito vigentes.</p>
         <p class="h4 text-justify"> Art.7.- Esta prohibido el estacionamiento permanente de los vehículos en las denominadas
@@ -191,19 +88,22 @@
         calles de la urbanización.
         No está permitido a menores de edad </p>
     </div>
-    <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <center>  <img src="img/CAPÍTULO IV.jpg" width="75%" height="85%" id="centrado12" alt=""></center> 
-          </div>
-   </div>
-   <div class="row">
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-   <center>  <img src="img/CAPÍTULO V.jpg" width="85%" height="100%" id="centrado13" alt=""></center> 
-    </div>
-    <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1 class="mr-5">Capitulo V.- DEL CONTROL DE ÁREAS Y SECTORES COMUNES  <span class="h4"> (5/12)</span></h1>
-      <hr size='5' width="600px">
-      <input type="checkbox" class="read-more-state" id="post-1" />
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/CAPÍTULO IV.jpg" class="" width="100%" height="70%">
+         
+        </div>
+      </div>
+      <div class="row pt-5 bg-secondary" > 
+    
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/CAPÍTULO V.jpg" class="" width="100%" height="70%">
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              
+              <h1 class="">Capitulo V.- DEL CONTROL DE ÁREAS Y SECTORES COMUNES    <span class="h4">(5/12)</span> </h1>
+              <hr size='5' width="100%">
+              
+              <input type="checkbox" class="read-more-state" id="post-1" />
       <p id="justificar" class="read-more-wrap h4 text-justify"><span class="espa1"> En el caso de la celebraciones o festejos que se realicen en los domicilios, las familias
         entregaran a la administración y la garita de ingreso, un listado que detalle los nombres de los
         invitados que concurrirán, la misma que pertenecerá en el ingreso para el control
@@ -279,17 +179,18 @@
               </div>
             </div>
           </div>
+          </div>
+          </div>
+       
+          <div class="row pt-5 "> 
+    
+   
+        <div class="col-xs-12 col-lg-6">
           
-    
-    </div>
-    </div>
-    <div class="row">
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-      <h1 class="mr-5">Capitulo VI.- DE LA COMISIÓN DE SEGURIDAD Y VIGILANCIA <span class="h4">(6/12)</span></h1>
-      <hr size='5' width="600px">
-    
-      <p  class="read-more-wrap h4 text-justify"> <span >Art.22.- La comisión de seguridad y vigilancia estará conformada por un Director y un máximo
+          <h1 class="">Capitulo VI.- DE LA COMISIÓN DE SEGURIDAD Y VIGILANCIA  <span class="h4">(6/12)</span> </h1>
+          <hr size='5' width="100%">
+          
+          <p  class="read-more-wrap h4 text-justify"> <span >Art.22.- La comisión de seguridad y vigilancia estará conformada por un Director y un máximo
       de 3 miembros, todos residentes de la urbanización, nombrados por la junta Directiva de la
       Urbanización la cual será renovada cada dos años.
       Son deberes y atribuciones de la comisión de seguridad y vigilancia en coordinación con la
@@ -354,25 +255,24 @@
             </div>
           </div>
           
-          
-        
+          </div>
+          <div class="col-xs-12 col-lg-6">
+      <img src="img/CAPÍTULO VI.jpg" class="" width="100%" height="70%">
+    </div>
        
           
     </div>
-    <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <center>  <img src="img/CAPÍTULO VI.jpg" width="75%" height="85%" id="centrado14" alt=""></center> 
+
+      <div class="row pt-5 bg-secondary"> 
+      <div class="col-xs-12 col-lg-6">
+      <img src="img/guardias.jpg" class="" width="100%" height="70%">
     </div>
-    </div>
-    <div class="row">
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <center>  <img src="img/guardias.jpg" width="75%" height="85%" id="centrado15" alt=""></center> 
-      </div>
-      <div class="col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-        <h1 class="mr-5">Capitulo VII.- DE LA GUARDIA DE SEGURIDAD  <span class="h4">(7/12)</span></h1>
-        <hr size='5' width="600px">
-     
-        <p  class="read-more-wrap h4 text-justify" ><span > Art.23.- La Guardia de Seguridad estará conformada por contratación de una de las
+<div class="col-xs-12 col-lg-6">
+<h1>Capitulo VII.- DE LA GUARDIA DE SEGURIDAD  <span class="h4">(7/12)</span></h1>
+  <hr size='5' width="100%">
+  
+ 
+  <p  class="read-more-wrap h4 text-justify" ><span > Art.23.- La Guardia de Seguridad estará conformada por contratación de una de las
           empresas especializadas con que cuenta la ciudad de Guayaquil que tenga experiencia en
           seguridad de urbanizaciones privadas y que cuente con todos los permisos y
           autorizaciones reguladas por la ley correspondiente y sus reglamentos.
@@ -438,11 +338,15 @@
       </div>
      
       </div>
-      <div class="row">
-        <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-          <hr size='5' width="600px">
-          <h1 class="mr-5">Capitulo VIII.- DE LAS MUDANZAS EN CASO DE ARRIENDO <span class="h4">(8/12)</span></h1>
-          <hr size='5' width="600px">
+
+
+      <div class="row pt-5 bg-white"> 
+    
+  
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">Capitulo VIII.- DE LAS MUDANZAS EN CASO DE ARRIENDO  <span class="h4">(8/12)</span> </h1>
+          <hr size='5' width="100%">
           
           <p  class="read-more-wrap h4 text-justify"> <span >Art.38.- El residente o propietario del inmueble deberá seguir los siguientes pasos previos a
             realizar una mudanza:  
@@ -544,26 +448,31 @@
                     </div>
                   </div>
                 </div>
-              </div>   
+                </div> 
+                </div>   
              
                   
-                      
+              <div class="col-xs-12 col-lg-6">
+      <img src="img/CAPÍTULO IX.jpg" class="" width="100%" height="70%">
+    </div>       
                 
         </div>
-        <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-          <center>  <img src="img/CAPÍTULO IX.jpg" width="90%" height="90%" id="centrado16" alt=""></center> 
-        </div>
-        </div>
-        <div class="row">
-          <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-            <center>  <img src="img/CAPÍTULO X.jpg" width="75%" height="85%" id="centrado17" alt=""></center> 
-          </div>
-          <div class="col-xs-6 col-lg-6">
-            <hr size='5' width="600px">
-            <h1 class="mr-5">Capitulo IX.- DE LAS MASCOTAS  <span class="h4">(9/12)</span></h1>
-            <hr size='5' width="600px">
-       
-            <p  class="read-more-wrap h4 text-justify" > <span>Art.43.- Los moradores de la urbanizacióndeberán observar las disposiciones establecidas en la
+
+  
+
+
+        <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/CAPÍTULO X.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">Capitulo IX.- DE LAS MASCOTAS  <span class="h4">(9/12)</span> </h1>
+          <hr size='5' width="100%">
+          
+        
+          <p  class="read-more-wrap h4 text-justify" > <span>Art.43.- Los moradores de la urbanizacióndeberán observar las disposiciones establecidas en la
               “Ordenanza que regula la protección, tenencia, control comercialización y cuidado de animales
               de compañía, así como aquellos que se utilizan en espectáculos públicos dentro del Cantón
               Guayaquil”. Por respeto y consideración a sus vecinos así como por elemental sentido de
@@ -644,12 +553,15 @@
               
           </div>
           </div>
-          <div class="row">
-            <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-              <hr size='5' width="600px">
-              <h1 class="mr-5">Capitulo X.- DE LA RECOLECCIÓN DE BASURA  <span class="h4">(10/12)</span></h1>
-              <hr size='5' width="600px">
-              <p class="h4 text-justify">Art.50.- El horario de recolección de basura será establecido por cada una de las
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>Capitulo X.- DE LA RECOLECCIÓN DE BASURA  <span class="h4">(10/12)</span></h1>
+          <hr size='5' width="100%">
+          
+         
+          <p class="h4 text-justify">Art.50.- El horario de recolección de basura será establecido por cada una de las
                 Administraciones de las etapas de Metrópolis II. 
                 
               </p>
@@ -664,21 +576,31 @@
                   enque el personal de recolección. 
                   
                    </p>    
+    
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/CAPÍTULO XI.jpg" class="" width="100%" height="70%">
+             
             </div>
-            <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-              <center>  <img src="img/CAPÍTULO XI.jpg" width="50%" class="centrado18" height="65%" alt=""></center> 
-            </div>
-            </div>
-            <div class="row">
-              <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-                <center>  <img src="img/CAPÍTULO XII.jpg" width="80%" height="90%" class="centrado19" alt=""></center> 
-              </div>
-              <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-                <hr size='5' width="600px">
-                <h1 class="mr-5">Capitulo XI.- DE LAS CONSTRUCTORAS <span class="h4">(11/12)</span></h1>
-                <hr size='5' width="600px">
-               
-                <p  class="read-more-wrap h4 text-justify" > <span>Los constructores deberán observar estrictamente las siguientes reglamentaciones: 
+          </div>
+
+
+
+
+
+
+
+          <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/CAPÍTULO XII.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">Capitulo XI.- DE LAS CONSTRUCTORAS <span class="h4">(11/12)</span> </h1>
+          <hr size='5' width="100%">
+          
+          <p  class="read-more-wrap h4 text-justify" > <span>Los constructores deberán observar estrictamente las siguientes reglamentaciones: 
                   <br>Art .53.- El horario de trabajo del personal de obra es de: 
                   <br>
                   
@@ -763,12 +685,14 @@
                       
               </div>
               </div>
-              <div class="row">
-                <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-                  <hr size='5' width="600px">
-                  <h1 class="mr-5">Capitulo XII.- COMPROMISOS  <span class="h4">(12/12)</span></h1>
-                  <hr size='5' width="600px">
-                  <p class="h4 text-justify">Art.62.- Los residentes deberán comprometerse a contribuir con el cumplimiento de estas
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>Capitulo XII.- COMPROMISOS <span class="h4">(12/12)</span></h1>
+          <hr size='5' width="100%">
+          
+         
+          <p class="h4 text-justify">Art.62.- Los residentes deberán comprometerse a contribuir con el cumplimiento de estas
                   normas de convivencia, vigilancia y seguridad. 
                   
                   <br>
@@ -790,98 +714,103 @@ ventanas se encuentren bien cerradas.
 
                         
                          </p>  
-                </div>
-                <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-                  <center>  <img src="img/CAPÍTULO XIII.jpeg" width="85%" height="90%" class="centrado20" alt=""></center> 
-                </div>
-                </div>
-              
+    
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/CAPÍTULO XIII.jpeg" class="" width="100%" height="70%">
+             
+            </div>
+          </div>
+
+  </section>
   </section>
   <section class="jumbotron bg-secondary text-justify" style="font-family: 'Titillium Web', sans-serif;">
     <p class="h4">
     </p>
 
   </section>
-  <section class="jumbotron " id="contenedor" style="font-family: ;">
-    <h1> <a class="animate__animated animate__fadeInRightBig" name="NORMAS"> NORMAS</h1>
-      <hr size='5' width="1200px">
-      <div class="row" id="contene">
-        <div class="animate__animated animate__fadeInLeftBig col-xs-12 col-lg-6" id="dere">
-          <a href="#menu" class="btn btn-primary" id="volver">Volver</a>
-        </div>
-      </div>
-    <div class="row">
-     
-     <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-     
-      <center>  <img src="img/NORMAS FERIADO2.jpg" width="80%" height="90%" alt="" class="centrado" ></center> 
+  <section class="jumbotron pt-5 bg-white"  >
     
-     </div>
-     <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-       <h1 class="mr-5">NORMAS PARA FERIADO <span class="h4">(1/9)</span></h1>
-       <hr size='5' width="600px">
-       <p class="h4 text-justify">• Informar por escrito a la administración, los días en que la villa permanecerá sola. 
-
-        <br>
-        • Al momento de salir de la villa, informar a la administración y/o seguridad, para que
-        verifique que la villa queda sin novedad.  
-        <br>
-         • Cerrar correctamente puertas y ventanas. 
-         <br>
-         • No dejar mascotas abandonadas en las villas.                    
-         <br>
-          • Dejar desactivadas alarmas de relojes, despertadores o dispositivos similares que se
-          puedan activar en ausencia de los residentes de las villas. 
-          <br>
-            • En caso de tener la villa sistema de alarma, dejarlo debidamente activado. 
-
-            
-            </p>
-      
-      </div>
-    </div>
-
-    
+    <h1> <a name="NORMAS">NORMAS<a href=""  class="btn btn-primary float-right">VOLVER</a>  </h1>
  
-    <div class="row">
-     <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-        <h1 class="mr-5">NORMA 1: ROBO ( DOMICILIOS / VEHÍCULOS).-  <span class="h4">(2/9)</span></h1>
-        <hr size='5' width="600px">
-        <p class="h4 text-justify">
+  <div class="row pt-5 bg-secondary" > 
+    
+<div class="col-xs-12 col-lg-6">
+  <img src="img/NORMAS FERIADO2.jpg" class="" width="100%" height="70%">
+</div>
+    <div class="col-xs-12 col-lg-6">
+      
+      <h1 class="">NORMAS PARA FERIADO  <span class="h4">(1/9)</span> </h1>
+      <hr size='5' width="100%">
+      
+      <p class="h4 text-justify">• Informar por escrito a la administración, los días en que la villa permanecerá sola. 
+
+<br>
+• Al momento de salir de la villa, informar a la administración y/o seguridad, para que
+verifique que la villa queda sin novedad.  
+<br>
+ • Cerrar correctamente puertas y ventanas. 
+ <br>
+ • No dejar mascotas abandonadas en las villas.                    
+ <br>
+  • Dejar desactivadas alarmas de relojes, despertadores o dispositivos similares que se
+  puedan activar en ausencia de los residentes de las villas. 
+  <br>
+    • En caso de tener la villa sistema de alarma, dejarlo debidamente activado. 
+
+    
+    </p>
+
+     
+    </div>
+  </div>
+   
+  <div class="row pt-5 bg-white"> 
+    
+    <div class="col-xs-12 col-lg-6">
+    <h1>NORMA 1: ROBO ( DOMICILIOS / VEHÍCULOS).-  <span class="h4">(2/9)</span></h1>
+      <hr size='5' width="100%">
+      
+     
+      <p class="h4 text-justify">
         El propietario que observe a cualquier persona, ya sea residente o visitante realizando actos
         que atenten contra los bienes de los demás, está en la obligación de llamar a la seguridad, y al
         911 de ser necesario, quienes acudirán inmediatamente para detener al sospechoso(a) y
         ponerlo (a) bajo custodia temporal hasta que se haga presente la Policía Nacional.                   
       </p>
-     </div>
-     <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-      <center>  <img src="img/NORMAS ROBO.jpg" width="70%" height="80%" alt="" class="centrado2"></center>               </div>
+
     </div>
-    <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS ACCIDENTE2.jpg" width="68%" height="100%" alt="" class="centrado3"></center>      
-          </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">NORMA 2:  ACCIDENTES.-  <span class="h4">(3/9)</span></h1>
-          <hr size='5' width="600px">
-       <p class="h4 text-justify">
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/NORMAS ROBO.jpg" class="" width="100%" height="70%">
+         
+        </div>
+      </div>
+      <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/NORMAS ACCIDENTE2.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">NORMA 2:  ACCIDENTES.-  <span class="h4">(3/9)</span></h1>
+          <hr size='5' width="100%">
+          
+          <p class="h4 text-justify">
          El propietario que observe a cualquier persona, ya sea residente o visitante realizando actos
          que atenten contra los bienes de los demás, está en la obligación de llamar a la seguridad, y al
          911 de ser necesario, quienes acudirán inmediatamente para detener al sospechoso(a) y
          ponerlo (a) bajo custodia temporal hasta que se haga presente la Policía Nacional.                   
        </p>
+         
+        </div>
       </div>
-     </div>
-     <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-         <h1 class="mr-5">NORMA 3: ALCOHOL Y DROGAS.-  <span class="h4">(4/9)</span></h1>
-         <hr size='5' width="600px">
-         <input type="checkbox" class="read-more-state" id="post-15" />
-         <p  class="read-more-wrap h4 text-justify" > <span>
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>NORMA 3: ALCOHOL Y DROGAS.-  <span class="h4">(4/9)</span></h1>
+          <hr size='5' width="100%">
+          <p id="justificar" class="read-more-wrap h4 text-justify"><span class="espa1">
         El propietario que observe a cualquier persona, ya sea residente o visitante realizando actos
         ilegales como consumer alcohol y droga, en viaspublicas, debe de informar a la seguridad,
         administrador.
@@ -889,60 +818,77 @@ ventanas se encuentren bien cerradas.
         alcohol dentro de la urbanización (aéreas comunes, verdes, deportivas, calles y veredas), sean
         mayores o menores de edad residentes o no a efecto que dejen de hacerlo. Si no fueren
         residentes, les exigirá inmediatamente que abandonen la urbanización, verificando que así lo
-        hagan. Si fueren menores de edad deberán llevarlos a sus respectivos hogares.   <span class="read-more-target"> En caso de que
+        hagan. Si fueren menores de edad deberán llevarlos a sus respectivos hogares.    En caso de que
         los implicados opongan resistencia a la intervención de la seguridad interna, está autorizada
         para requerir la intervención de la Policía Nacional. Si los residentes fueran menores de edad,
         analizando el caso, la seguridad los pondrá bajo tutela de los padres o a disposición de la
         Policía Nacional, siempre que se resistieren a acatar las disposiciones de la seguridad interna. 
       </p> 
     </span>  
-  </span>
-  <center>    <label for="post-6"  class="btn btn-outline-primary" id="espa2">Ver mas</label></center> 
-      </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS ALCOHOLDROGAS2.png" width="60%" height="70%" alt=""class="centrado4"></center>           </div>
-     </div>
-     <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS INCENDIO.jpg" width="45%" height="55%" alt="" class="centrado5"></center>           
+    
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/NORMAS ALCOHOLDROGAS2.png" class="" width="100%" height="70%">
+             
+            </div>
           </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">NORMA 4:  INCENDIOS.-  <span class="h4">(5/9)</span></h1>
-          <hr size='5' width="600px">
-       <p class="h4 text-justify">
+
+
+
+          <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/NORMAS INCENDIO.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">NORMA 4:  INCENDIOS.-  <span class="h4">(5/9)</span></h1>
+          <hr size='5' width="100%">
+          
+          <p class="h4 text-justify">
         En este caso de incendio, el propietario deberá llamar inmediatamente a los bomberos (911) y
         paralelamente a la administración o a seguridad para socorrerlo. 
                     
        </p>
+         
+        </div>
       </div>
-     </div>
-
-     <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-         <h1 class="mr-5">NORMA 5: RUIDO O MALA VECINDAD.-  <span class="h4">(6/9)</span></h1>
-         <hr size='5' width="600px">
-       <p class="h4 text-justify">
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>NORMA 5: RUIDO O MALA VECINDAD.-  <span class="h4">(6/9)</span></h1>
+          <hr size='5' width="100%">
+          
+         
+          <p class="h4 text-justify">
         Los propietarios están en plena libertad de llamar la atención a aquellos propietarios que, de
         cualquier forma, provoquen mala vecindad dentro de la urbanización o si prefiere llamar a la
         administración o a seguridad quienes se encargan de solicitar al infractor que suspenda
         cualquier actividad que este molestando a sus vecinos y, en casos extremos cuando el infractor
         no colabore y continúe causando molestia, la seguridad llamará a la Policía Nacional. 
        </p>
-      </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS RUIDO_MALAVECINDAD.jpg" width="65%" height="75%" class="centrado6" alt=""></center>               </div>
-     </div>
-     <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS ACCIDENTE_TRANSITO2.jpg" width="69%" height="79%" alt="" class="centrado7"></center>         
+    
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/NORMAS RUIDO_MALAVECINDAD.jpg" class="" width="100%" height="70%">
+             
+            </div>
           </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">NORMA 6:  ACCIDENTES DE TRÁNSITOS.-  <span class="h4">(7/9)</span></h1>
-          <hr size='5' width="600px">
-       <p class="h4 text-justify">
+
+
+
+          <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/NORMAS ACCIDENTE_TRANSITO2.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">NORMA 6:  ACCIDENTES DE TRÁNSITOS.-  <span class="h4">(7/9)</span> </h1>
+          <hr size='5' width="100%">
+          
+          <p class="h4 text-justify">
         El propietario que sea víctima de un accidente de tránsito dentro de la urbanización deberá: 
        </p>
        <p class="h4 text-justify">
@@ -956,14 +902,18 @@ ventanas se encuentren bien cerradas.
        <p class="h4 text-justify">
         c) Seguridad y administración deberán llamar también a la Comisión de tránsito. 
        </p>
+         
+        </div>
       </div>
-     </div>
-     <div class="row">
-     <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-      <hr size='5' width="600px">
-         <h1 class="mr-5">NORMA 7: EXCESO DE VELOCIDAD.-  <span class="h4">(8/9)</span></h1>
-         <hr size='5' width="600px">
-       <p class="h4 text-justify">
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>NORMA 7: EXCESO DE VELOCIDAD.-  <span class="h4">(8/9)</span></h1>
+          <hr size='5' width="100%">
+          
+         
+          <p class="h4 text-justify">
         La seguridad tiene autoridad y libertad de llamar la atención a los residentes y visitantes que
 excedan el límite de velocidad permitido dentro de la urbanización o irrespete las señales de
 tránsito, cuando conduzca cualquier tipo de vehículo motorizado.
@@ -972,19 +922,29 @@ Comisión de Tránsito.
 Así mismo prohibirá que los propietarios impartan o reciban clases de manejo dentro de la
 urbanización.  
        </p>
-      </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS EXCESO_VELOCIDAD.jpg" width="50%" height="60%" class="centrado8" alt=""></center>              </div>
-     </div>
-     <div class="row">
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <center>  <img src="img/NORMAS DISTURBIOS.jpg" width="60%" height="70%" alt=""></center>        
+        </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/NORMAS EXCESO_VELOCIDAD.jpg" class="" width="100%" height="70%">
+             
+            </div>
           </div>
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">NORMA 8:  DISTURBIOS.-  <span class="h4">(9/9)</span></h1>
-          <hr size='5' width="600px">
-       <p class="h4 text-justify">
+
+
+
+
+
+
+          <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/NORMAS DISTURBIOS.jpg" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">NORMA 8:  DISTURBIOS.-  <span class="h4">(9/9)</span></h1>
+          <hr size='5' width="100%">
+          
+          <p class="h4 text-justify">
         La seguridad tomará acción (de acuerdo al caso presentado) en cuanto a:  
        </p>
        <p class="h4 text-justify">
@@ -1008,27 +968,24 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
    <section class="jumbotron bg-secondary text-justify" style="font-family: 'Titillium Web', sans-serif;">
     <p class="h4">
     </p>
-   
-  </section>
+       
+      </section>
 
-  <section class="jumbotron " id="contenedor" style="font-family: ;">
-    <h1> <a class="animate__animated animate__fadeInRightBig" name="PROCEDIMIENTOS">PROCEDIMIENTOS</h1>
-      <hr size='5' width="1200px">
-      <div class="row" id="contene">
-        <div class="col-xs-12 col-lg-6" id="dere">
-          <a href="#menu" class="btn btn-primary" id="volver">Volver</a>
-        </div>
-      </div>
-    <div class="row">
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <center>  <img src="img/PROCEDIMIENTO4.jpg" width="70%" height="80%" class="centrado21" alt=""></center>         
-          </div>
-      <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">PROCEDIMIENTOS ANUNCIO DE VISITAS A RESIDENTES E INGRESO VISITANTES .-  <span class="h4">(1/6)</span></h1>
-          <hr size='5' width="600px" >
-        
-          <p  class="read-more-wrap h4 text-justify" > <span>  
+      <section class="jumbotron pt-5 bg-white"  >
+    
+    <h1> <a name="PROCEDIMIENTOS">PROCEDIMIENTOS<a href=""  class="btn btn-primary float-right">VOLVER</a>  </h1>
+ 
+  <div class="row pt-5 bg-secondary" > 
+    
+<div class="col-xs-12 col-lg-6">
+  <img src="img/PROCEDIMIENTO4.jpg" class="" width="100%" height="70%">
+</div>
+    <div class="col-xs-12 col-lg-6">
+      
+      <h1 class="">PROCEDIMIENTOS ANUNCIO DE VISITAS A RESIDENTES E INGRESO VISITANTES .-  <span class="h4">(1/6)</span></h1>
+      <hr size='5' width="100%">
+      
+      <p  class="read-more-wrap h4 text-justify" > <span>  
         Art.24.- El personal de seguridad de garita cumplirá con los siguientes procedimientos para el
         anuncio de visitas e ingreso de visitantes:
         <br>
@@ -1139,12 +1096,15 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
     
       </div>
      </div>
-     <div class="row">
-      <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-        <hr size='5' width="600px">
-          <h1 class="mr-5">Art.25.- PRODECIMIENTO SALIDA DE VISITANTES.-  <span class="h4">(2/6)</span></h1>
-          <hr size='5' width="600px">
-          <p class="h4 text-justify">
+   
+  <div class="row pt-5 bg-white"> 
+    
+    <div class="col-xs-12 col-lg-6">
+    <h1>Art.25.- PRODECIMIENTO SALIDA DE VISITANTES.-  <span class="h4">(2/6)</span></h1>
+      <hr size='5' width="100%">
+      
+     
+      <p class="h4 text-justify">
           1. Visitantes se estaciona frente al portón de salida de la urbanización. 
         </p>
         <p class="h4 text-justify">
@@ -1175,21 +1135,27 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
           8. Registra la hora de salida del visitante. 
 
         </p>
-       </div>
-       <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-        <center>  <img src="img/PROCEDIMIENTO2.jpg" class="centrado22" width="75%" height="85%" alt=""></center>               
-         </div>
+
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          <img src="img/PROCEDIMIENTO2.jpg" class="" width="100%" height="70%">
+         
+        </div>
       </div>
 
-      <div class="row">
-        <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-          <center>  <img src="img/Villa-Club-logo-copy.png" width="60%" height="70%" alt=""></center>            
-            </div>
-        <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-          <hr size='5' width="600px">
-            <h1 class="mr-5">Art.26.- PROCEDIMIENTO INGRESO Y SALIDA VEHÍCULOS DE CARGA.-  <span class="h4">(3/6)</span></h1>
-            <hr size='5' width="600px">
-            <p class="h4 text-justify">  
+
+
+      <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/Villa-Club-logo-copy.png" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">Art.26.- PROCEDIMIENTO INGRESO Y SALIDA VEHÍCULOS DE CARGA.-  <span class="h4">(3/6)</span></h1>
+          <hr size='5' width="100%">
+          
+          <p class="h4 text-justify">  
           Todo vehículo de carga con materiales de construcción, muebles o mudanza, debe
           contar con la respectiva autorización escrita, con sello y firma de la administración
           previa su ingreso o salida de la urbanización. El ingreso de estos vehículos no los
@@ -1207,17 +1173,18 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
           exista nada fuera de lo normal en el objeto transportados. 
          </p>
        
+         
         </div>
-       </div>
-
-
-
-      <div class="row">
-        <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-          <hr size='5' width="600px">
-            <h1 class="mr-5"> Art.27.- PROCEDIMIENTO INGRESO TRABAJADORES .-  <span class="h4">(4/6)</span></h1>
-            <hr size='5' width="600px">
-            <p class="h4 text-justify">
+      </div>
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1> Art.27.- PROCEDIMIENTO INGRESO TRABAJADORES .-  <span class="h4">(4/6)</span></h1>
+          <hr size='5' width="100%">
+          
+         
+          <p class="h4 text-justify">
             1. Trabajadores se forman para ingresar a la urbanización.
             
           </p>
@@ -1237,21 +1204,29 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
           <p class="h4 text-justify">
             5. Guarda la identificación del trabajador en forma ordenada. 
           </p>
-         </div>
-         <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-          <center>  <img src="img/Villa-Club-logo-copy.png" width="60%" height="70%" alt=""></center> 
         </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/Villa-Club-logo-copy.png" class="" width="100%" height="70%">
+             
+            </div>
+          </div>
 
-        <div class="row">
-          <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-            <center>  <img src="img/Villa-Club-logo-copy.png" width="60%" height="70%" alt=""></center>         
-              </div>
-          <div class="col-xs-6 col-lg-6">
-            <hr size='5' width="600px">
-              <h1 class="mr-5">Art. 28.- PRODECIMIENTO SALIDA TRABAJADORES.-  <span class="h4">(5/6)</span></h1>
-              <hr size='5' width="600px">
-           
-              <p  class="read-more-wrap h4 text-justify"> <span>  
+
+
+
+
+
+          <div class="row pt-5 bg-secondary" > 
+    
+    <div class="col-xs-12 col-lg-6">
+      <img src="img/Villa-Club-logo-copy.png" class="" width="100%" height="70%">
+    </div>
+        <div class="col-xs-12 col-lg-6">
+          
+          <h1 class="">Art. 28.- PRODECIMIENTO SALIDA TRABAJADORES.-  <span class="h4">(5/6)</span></h1>
+          <hr size='5' width="100%">
+          
+          <p  class="read-more-wrap h4 text-justify"> <span>  
             Todo vehículo de carga con materiales de construcción, muebles o mudanza, debe
             contar con la respectiva autorización escrita, con sello y firma de la administración
             previa su ingreso o salida de la urbanización. El ingreso de estos vehículos no los
@@ -1329,14 +1304,15 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
           </div>
          </div>
 
-
-        <div class="row">
-          <div class="animate__animated animate__fadeInRightBig col-xs-6 col-lg-6">
-            <hr size='5' width="600px">
-              <h1 class="mr-5">Art.29.- PROCEDIMIENTO INGRESO TRABAJADORES PARTICULARES  <span class="h4">(6/6)</span></h1>
-              <hr size='5' width="600px">
+       
+      <div class="row pt-5 bg-white"> 
+        
+        <div class="col-xs-12 col-lg-6">
+        <h1>Art.29.- PROCEDIMIENTO INGRESO TRABAJADORES PARTICULARES  <span class="h4">(6/6)</span></h1>
+          <hr size='5' width="100%">
           
-              <p  class="read-more-wrap h4 text-justify"  <span> 
+         
+          <p  class="read-more-wrap h4 text-justify"  <span> 
               1. Trabajador llega a la garita principal a partir de las 07:00 horas.
               <br>
               2. Guardia le solicita identificación (cédula original) así como la manzana, villa, y
@@ -1469,26 +1445,10 @@ invitados. Los padres son responsables de los daños causados por sus hijos meno
             
        
            </div>
-           <div class="animate__animated animate__fadeInLeftBig col-xs-6 col-lg-6">
-            <center>  <img src="img/Villa-Club-logo-copy.png" width="60%" height="70%" alt=""></center>               </div>
+            <div class="col-xs-12 col-lg-6">
+              <img src="img/Villa-Club-logo-copy.png" class="" width="100%" height="70%">
+             
+            </div>
           </div>
-
-  </section>
-
-  <section class="jumbotron bg-secondary text-justify" style="font-family: 'Titillium Web', sans-serif;">
-    <p class="h4">
-    </p>
-   
-  </section>
-  <section class="animate__animated animate__fadeInRightBig jumbotron " id="contenedor" style="font-family: ;">
-    <hr size='5' width="600px">
-  <h1> <a name="REGLAMENTO">REGLAMENTO</h1>
-    <hr size='5' width="600px">
-    <div class="row" id="contene">
-      <div class="col-xs-12 col-lg-6" id="dere">
-        <a href="#menu" class="btn btn-primary" id="volver">Volver</a>
-      </div>
-    </div>
-    
-  </section>
+      </section>
 @endsection

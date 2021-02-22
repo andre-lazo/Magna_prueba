@@ -80,7 +80,7 @@
         <label for="message-text" class="col-form-label">Propietario:</label>
         <select name="propietario" class="form-control">
           @foreach ($usuarios as $usuario)
-          <option value="{{$usuario->id}}">{{$usuario->name}}-{{$usuario->apellido}}-{{$usuario->cedula}}</option>
+          <option value="{{$usuario->id}}">{{$usuario->apellido}}-{{$usuario->name}}-{{$usuario->cedula}}</option>
           @endforeach
         </select>
         <label for="message-text" class="col-form-label">Fecha inicio:</label>

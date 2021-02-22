@@ -1,20 +1,71 @@
 @extends('navbar_user')
 
 @section('content')
-<section class="pt-5 " >
+
+
+<style>
+  *{
+    margin:5;
+    padding: 5;
+}
+
+@media screen and (max-width:800px){
+  
+
+
+}
+
+  </style>
+
+
+<body>
+
+
+
+
     <div class="row">
-      <div class="col-xs-12 col-lg-6 lead mt-5 pl-5">
+      <div class="col-xs-12 col-lg-6 lead mt-5 pl-4">
         <h1 id="bien" class="animate__animated animate__bounce text-center">BIENVENIDA</h1>
         <p class="animate__animated animate__fadeInTopLeft lead text-justify mt-5" style="font-size: x-large;">
           Bienvenidos al portal web de la urbanización residencial Magna, este conjunto urbanizacional busca conformar un espacio de vivienda organizado con  lugares de convivencia donde prevalezcan la armonía, el respeto, la responsabilidad, el orden, la dignidad y los valores humanos, haciendo de la Urbanización Magna de Villa Club un sitio agradable para vivir.  
         </p>          </div>
-      <div class="animate__animated animate__fadeInTopRight col-xs-12 col-lg-6  pr-5">
-        <img src="img/magna.jpeg"  width="100%">
+      <div class="animate__animated animate__fadeInTopRight col-xs-12 col-lg-6  pr-1 pt-5">
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/magna.jpeg"  class="d-block w-100" >
+            </div>
+            <div class="carousel-item "  >
+              <img src="img/cancha.jpg" class="d-block w-100"  >
+            </div>
+            <div class="carousel-item ">
+              <img src="img/pis.jpg"  class="d-block w-100 " >
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+       
+
       </div>
     </div>
     
   </section>
-       <section id="galeria" name="galeria" class="animate__animated animate__fadeInUpBig bg-secondary">
+ 
+       <section id="galeria" name="galeria" class="animate__animated animate__fadeInUpBig bg-secondary ml-2">
        
         <center>
           <h1 class="mt-5">VISITA NUESTROS LUGARES DE RECREACION</h1>
@@ -45,4 +96,8 @@
           </div>
         </div></center>
        </section>
+
+</body>
+
 @endsection
+

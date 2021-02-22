@@ -53,27 +53,27 @@
           </tr>
           <tr>
             <td class="text-center">Cuotas totales:</td>
-            <td class="text-center">{{$alicuota->cuotas_totales}}</td>
+            <td class="text-center">{{$alicuota->cuotas_totales}} mes(es)</td>
           </tr>
           <tr>
             <td class="text-center">Valor total:</td>
-            <td class="text-center">{{$alicuota->valor_total}}</td>
+            <td class="text-center">$ {{$alicuota->valor_total}}</td>
           </tr>
           <tr>
             <td class="text-center">Cuotas pagadas:</td>
-            <td class="text-center">{{$alicuota->cuotas_pagadas}}</td>
+            <td class="text-center">$  {{$alicuota->cuotas_pagadas}}  mes(es)</td>
           </tr>
           <tr>
             <td class="text-center">Valor pagado:</td>
-            <td class="text-center">{{$alicuota->valor_pagado}}</td>
+            <td class="text-center">$  {{$alicuota->valor_pagado}}</td>
           </tr>
           <tr>
             <td class="text-center">Cuotas adeudadas: </td>
-            <td class="text-center">{{$alicuota->cuotas_adeudadas}}</td>
+            <td class="text-center">{{$alicuota->cuotas_adeudadas}}  mes(es)</td>
           </tr>
           <tr>
             <td class="text-center">Valor Adeudado:</td>
-            <td class="text-center">{{$alicuota->valor_adeudado}}</td>
+            <td class="text-center">$ {{$alicuota->valor_adeudado}}</td>
           </tr>
           
 

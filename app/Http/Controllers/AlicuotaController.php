@@ -14,25 +14,26 @@ class AlicuotaController extends Controller
          
         $this->middleware('auth');
      }
-    public function index()
-    {
-       
-        $residencia=Residencia::all();
-        $usuario=DB::table('users')
-        ->select('users.id','users.name','users.apellido','users.cedula','users.email','residencias.residencia_id')
-        ->join('residencias','users.residencia_id','residencias.id')
-        ->orderby('residencia_id','asc')
-        ->get();
-        $usuario=$usuario->sortByDesc('residencia_id');
-        $data=DB::table('alicuotas')
-        ->select('alicuotas.residencia_id as alicuota_r','alicuotas.id','residencias.residencia_id','users.name','users.apellido','users.cedula'
-        ,'alicuotas.cuotas_pagadas','alicuotas.cuotas_adeudadas','alicuotas.updated_at')
-        ->join('residencias','alicuotas.residencia_id','residencias.id')
-        ->join('users','users.id','alicuotas.id_usuario')   
-        ->orderby('residencia_id','asc')
-        ->get();
-        return \view('alicuotas.index',['alicuotas'=>$data,'residencias'=>$residencia,'usuarios'=>$usuario]);
-    }
+     public function index(Request $request)
+     {
+         $query=trim($request->get('search'));
+         $residencia=Residencia::all();
+         $usuario=DB::table('users')
+         ->select('users.id','users.name','users.apellido','users.cedula','users.email','residencias.residencia_id')
+         ->join('residencias','users.residencia_id','residencias.id')
+         ->orderby('apellido','asc')
+         ->get();
+        
+         $data=DB::table('alicuotas')
+         ->select('alicuotas.residencia_id as alicuota_r','alicuotas.id','residencias.residencia_id','users.name','users.apellido','users.cedula'
+         ,'alicuotas.cuotas_pagadas','alicuotas.cuotas_adeudadas','alicuotas.updated_at')
+         ->join('residencias','alicuotas.residencia_id','residencias.id')
+         ->join('users','users.id','alicuotas.id_usuario') 
+         ->where('cedula','LIKE','%'.$query.'%')
+         ->orderby('residencia_id','asc')
+         ->get();
+         return \view('alicuotas.index',['alicuotas'=>$data,'residencias'=>$residencia,'usuarios'=>$usuario]);
+     }
 
    
     

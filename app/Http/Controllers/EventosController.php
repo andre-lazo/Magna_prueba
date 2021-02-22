@@ -20,6 +20,11 @@ class EventosController extends Controller
     
     public function create(Request $request)
     {
+        $data=DB::table('eventos')
+        ->select( 'eventos.start','residencias.id')
+        ->join('users','users.id','eventos.id_usuario')
+        ->join('residencias','users.residencia_id','residencias.id')    
+        ->get();  
         $bool1=false;   
         $bool2=false;   
         $bool3=false;   
@@ -39,8 +44,8 @@ class EventosController extends Controller
       }
       
       $i=0;
-    foreach($arreglo as $item){
-        if($item->id_usuario==$request->user()->id){
+    foreach($data as $item){
+        if($item->id==$request->user()->residencia_id&&$item->start==$hora." 00:00:00"){
             $i++;
         }
     }
@@ -57,10 +62,10 @@ class EventosController extends Controller
             'fecha'=>$hora
             ]);
           }else{
-                return redirect('/eventos')->with('warning','No puede reservar mas de una vez en un dia esta locacion');
+                return redirect('/eventos')->with('warning','ESTA VILLA NO PUEDE RESERVAR MAS DE UNA VEZ POR DÍA EL SALON DE EVENTO');
             }
       }else{
-        return redirect('/eventos')->with('warning','Lo sentimos no quedan horas disponibles para reservar en este dia');
+        return redirect('/eventos')->with('warning','LO SENTIMOS NO QUEDAN MAS HORAS DISPONIBLES PARA RESERVAR EN ESTE DIA');
       }
     }
 
@@ -110,7 +115,6 @@ class EventosController extends Controller
     public function show(Request $request)
     {
         $eventos= Evento::all();
-        $eventos=$eventos->sortByDesc('id');
 
         $data['eventos'] =$eventos;
         return response()->json($data['eventos']);

@@ -18,7 +18,7 @@
        
         var url_show="{{url('/canchas/show')}}"; 
     </script>
-    <script src="{{asset('js/calendar.js')}}" defer></script>
+    <script src="{{asset('js/calendario.js')}}" defer></script>
  
 @endsection
 

@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
-
+    var date = new Date();
+        var yyyy = date.getFullYear().toString();
+        var mm = (date.getMonth()+1).toString().length == 1 ? "0"+(date.getMonth()+1).toString() : (date.getMonth()+1).toString();
+        var dd  = (date.getDate()).toString().length == 1 ? "0"+(date.getDate()).toString() : (date.getDate()).toString();
+        var fec2 = yyyy+","+mm+","+dd;
     var calendar = new FullCalendar.Calendar(calendarEl, {
         //PARA QUE EL CALENDARIO INICIE EN UNA FECHA ELEGIDA
-      defaultDate: new Date(2020,10,16), 
+      defaultDate: new Date(fec2), 
       Array, default: [],
       hiddenDays: [1],
       plugins: [ 'dayGrid', 'interaction', 'timeGrid', 'list' ],
@@ -71,4 +75,3 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.render();
     
   });
- 

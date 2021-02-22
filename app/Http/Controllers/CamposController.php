@@ -29,6 +29,11 @@ class CamposController extends Controller
     
     public function create(Request $request)
     {
+        $data=DB::table('campos')
+        ->select( 'campos.start','residencias.id')
+        ->join('users','users.id','campos.id_usuario')
+        ->join('residencias','users.residencia_id','residencias.id')    
+        ->get();
         $bool1=false;   
         $bool2=false;   
         $bool3=false;   
@@ -62,8 +67,8 @@ class CamposController extends Controller
       }
       
       $i=0;
-    foreach($arreglo as $item){
-        if($item->id_usuario==$request->user()->id){
+    foreach($data as $item){
+        if($item->id==$request->user()->residencia_id&&$item->start==$hora." 00:00:00"){
             $i++;
         }
     }
@@ -91,12 +96,14 @@ class CamposController extends Controller
       'fecha'=>$hora
       ]);
     }else{
-          return redirect('/campos')->with('warning','No puede reservar mas de dos veces en un dia esta locacion');
+          return redirect('/campos')->with('warning','ESTA VILLA NO PUEDE RESERVAR MAS DE DOS VECES POR DÍA LA CANCHA!!!');
       }}else{
-        return redirect('/campos')->with('warning','Lo sentimos no quedan horas disponibles para reservar en este dia');
+        return redirect('/campos')->with('warning','LO SENTIMOS NO QUEDAN MAS HORAS DISPONIBLES PARA RESERVAR EN ESTE DIA');
 
       }
     }
+
+  
 
   
     public function store(Request $request)
@@ -134,7 +141,6 @@ class CamposController extends Controller
 
     public function show(Request $request)
     {
-        //RECOLECTAMOS TODA LA INFORMACION GUARDADA EN LA BASE DE DATOS
         $campos= Campo::all();
       
       

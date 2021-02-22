@@ -19,7 +19,14 @@ class FutbolsController extends Controller
 
     
     public function create(Request $request)
-    {   $bool1=false;   
+    { 
+        $data=DB::table('futbols')
+        ->select( 'futbols.start','residencias.id')
+        ->join('users','users.id','futbols.id_usuario')
+        ->join('residencias','users.residencia_id','residencias.id')    
+        ->get();  
+        
+        $bool1=false;   
         $bool2=false;   
         $bool3=false;   
         $bool4=false;   
@@ -52,8 +59,8 @@ class FutbolsController extends Controller
       }
       
       $i=0;
-    foreach($arreglo as $item){
-        if($item->id_usuario==$request->user()->id){
+    foreach($data as $item){
+        if($item->id==$request->user()->residencia_id&&$item->start==$hora." 00:00:00"){
             $i++;
         }
     }
@@ -81,9 +88,9 @@ class FutbolsController extends Controller
       'fecha'=>$hora
       ]);
     }else{
-          return redirect('/futbols')->with('warning','No puede reservar mas de dos veces en un dia esta locacion');
+          return redirect('/futbols')->with('warning','ESTA VILLA NO PUEDE RESERVAR MAS DE DOS VECES POR DÍA LA CANCHA!!!');
       }}else{
-        return redirect('/futbols')->with('warning','Lo sentimos no quedan horas disponibles para reservar en este dia');
+        return redirect('/futbols')->with('warning','LO SENTIMOS NO QUEDAN MAS HORAS DISPONIBLES PARA RESERVAR EN ESTE DIA');
 
       }
     }
@@ -125,7 +132,6 @@ class FutbolsController extends Controller
     public function show(Request $request)
     {
         $futbols= Futbol::all();
-        $futbols=$futbols->sortByDesc('id');
 
         $data['futbols'] =$futbols;
         return response()->json($data['futbols']);
