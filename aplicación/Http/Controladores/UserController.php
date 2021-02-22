@@ -86,7 +86,7 @@ class UserController extends Controller
         );
         $usuario->assignRole($request->get($usuario->rol));
       
-       Mail::to($usuario->email)->send(new FormularioContacto($correo,$asunto));
+//       Mail::to($usuario->email)->send(new FormularioContacto($correo,$asunto));
         return redirect('/user')->with('success','Usuario '.$usuario->name.' Registrado correctamente');
     }
 
